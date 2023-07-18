@@ -30,11 +30,32 @@ nav h2 {
 nav h2 span {
     color: #FF42A5;
 }
-nav .nav-list{
+
+nav .nav-list {
     display: flex;
+    gap: 20px;
+    align-items: center;
     
 }
 
-nav ul button{
-    width: 250px 50px;
+nav li {
+    list-style: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul button {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    border: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
 }
