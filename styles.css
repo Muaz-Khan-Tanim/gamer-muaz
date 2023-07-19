@@ -194,9 +194,20 @@ nav ul button {
 
 /* Games add */
 
+.games-card{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
 .game{
     border-radius: 50px;
     background: #FFF;
-    width: 300;
-    
+    width: 500;
+    display: flex;
+    text-align: center;
+}
+.games-card img{
+    margin-right: 10px;
 }
