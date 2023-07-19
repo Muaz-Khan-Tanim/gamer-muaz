@@ -9,7 +9,9 @@
 main {
     margin: 0 40px;
 }
-
+span {
+    color: #FF42A5;
+}
 /* header start here */
 /* nav start */
 nav {
@@ -134,10 +136,6 @@ nav ul button {
     margin-bottom: .5rem;
 }
 
-.online h2 span {
-    color: #FF42A5;
-}
-
 .online .title-p {
     color: #534C64;
     text-align: center;
@@ -177,4 +175,8 @@ nav ul button {
 }
 .play p{
     width: 350px;
+}
+.play .play-img .img-2{
+    position: relative;
+    right: 50px;
 }
