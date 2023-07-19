@@ -7,7 +7,7 @@
 }
 
 main {
-    margin: 0 40px;
+    padding: 0 40px;
 }
 span {
     color: #FF42A5;
@@ -34,9 +34,7 @@ nav h2 {
     font-weight: 700;
 }
 
-nav h2 span {
-    color: #FF42A5;
-}
+
 
 nav .nav-list {
     display: flex;
@@ -194,9 +192,43 @@ nav ul button {
 
 /* Games add */
 
+.games-card{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5rem;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 5rem 10rem;
+    gap: 1rem;
+}
+
 .game{
     border-radius: 50px;
-    background: #FFF;
-    width: 300;
-    
+    height: 80px;
+    display: flex;
+    width: 300px;
+    background-color: #FFF;
+    align-items: center;
+}
+.game:hover{
+    color: #FF42A5;
+    border: 1px solid #FF42A5;
+}
+
+/* Footer */
+footer {
+    background-color: #0B0223;
+    padding: 6rem 20rem;
+}
+.logo-btm {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.btm-list{
+    display: flex;
+    color: #FFF;
+    list-style: none;
+    margin-top: 3rem;
+    gap: 0;
 }
