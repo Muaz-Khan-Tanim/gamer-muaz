@@ -292,8 +292,7 @@ footer p {
     }
     .banner {
         flex-direction: column-reverse;
-        margin-top: 5rem;
-        
+        margin-top: 5rem;  
     }
     .banner img, .play, .play-content{
         width: 100%;
@@ -327,5 +326,19 @@ footer p {
         margin-left: -250px;
     }
 }
-    
+@media screen and (min-width:425px) and (max-width:768px) {
+    .banner, .play, .play-img {
+        flex-direction: column-reverse;
+    }
+    img{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .img-1 {
+        margin-left: 300px;
+    }
+    .play-content {
+        text-align: center;
+        margin-left: -150px;
+    }
+}
 
