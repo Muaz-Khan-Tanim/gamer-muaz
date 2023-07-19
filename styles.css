@@ -282,3 +282,44 @@ footer p {
     font-weight: 500;
     margin-top: 2rem;
 }
+
+/* Responsive devices */
+/* mobile devices */
+@media screen and (max-width:425px) {
+    nav, .nav-list, .img, .play, .icon, {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+        
+    }
+    .banner img, .play, .play-content{
+        width: 100%;
+    }
+    .img-card{
+        margin-left: -120px;
+    }
+    .play{
+        text-align: center;
+    }
+    .play-content, .play-img {
+        margin-left: -290px;
+    }
+    .img-2, .img-1 {
+        width: 50%;
+    }
+    .img-1, .logo-btm {
+        margin-left: -150px;
+        bottom: 250px;
+    }
+    .games-card {
+        display: grid;
+        width: 30%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -150px;
+    }
+}
+    
+
