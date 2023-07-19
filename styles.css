@@ -9,9 +9,11 @@
 main {
     padding: 0 40px;
 }
+
 span {
     color: #FF42A5;
 }
+
 /* header start here */
 /* nav start */
 nav {
@@ -149,8 +151,25 @@ nav ul button {
     gap: 1.5rem;
 }
 
+
 .online .img img {
     margin-bottom: 1.25rem;
+    position: absolute
+}
+
+.watch-btn {
+    position: absolute;
+    top: -250px;
+    right: -50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.online .img img:hover {
+    border: 8px solid #FF42A5;
+    border-radius: 25px;
+    filter: brightness(80%);
+
 }
 
 .online .img p {
@@ -171,20 +190,24 @@ nav ul button {
 .play h2 {
     font-size: 3rem;
     font-weight: 700;
-    
+
 }
+
 .play p {
     width: 350px;
-    
+
 }
-.play .play-img{
+
+.play .play-img {
     margin-right: 0;
 }
+
 .play .play-img .img-1 {
     position: relative;
     z-index: 1;
     bottom: -100px;
 }
+
 .play .play-img .img-2 {
     position: relative;
     right: 200px;
@@ -192,7 +215,7 @@ nav ul button {
 
 /* Games add */
 
-.games-card{
+.games-card {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 5rem;
@@ -201,7 +224,7 @@ nav ul button {
     gap: 1rem;
 }
 
-.game{
+.game {
     border-radius: 50px;
     height: 80px;
     display: flex;
@@ -209,7 +232,8 @@ nav ul button {
     background-color: #FFF;
     align-items: center;
 }
-.game:hover{
+
+.game:hover {
     color: #FF42A5;
     border: 1px solid #FF42A5;
 }
@@ -219,16 +243,39 @@ footer {
     background-color: #0B0223;
     padding: 6rem 20rem;
 }
+
 .logo-btm {
     color: #FFF;
     display: flex;
+    margin: 0 30rem 0 30rem;
+    text-align: center;
     align-items: center;
 }
 
-.btm-list{
+.btm-list {
     display: flex;
     color: #FFF;
     list-style: none;
     margin-top: 3rem;
     gap: 0;
+}
+
+
+.term-list {
+    display: flex;
+    color: #FFF;
+    list-style: none;
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
 }
