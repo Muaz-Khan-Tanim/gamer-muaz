@@ -167,16 +167,27 @@ nav ul button {
     margin-top: 5rem;
     text-align: right;
     align-items: center;
+    margin-left: 300px;
 }
 
 .play h2 {
     font-size: 3rem;
     font-weight: 700;
+    
 }
-.play p{
+.play p {
     width: 350px;
+    
 }
-.play .play-img .img-2{
+.play .play-img{
+    margin-right: 0;
+}
+.play .play-img .img-1 {
     position: relative;
-    right: 50px;
+    z-index: 1;
+    bottom: -100px;
+}
+.play .play-img .img-2 {
+    position: relative;
+    right: 200px;
 }
