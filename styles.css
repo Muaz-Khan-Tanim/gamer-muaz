@@ -6,6 +6,10 @@
     margin: 0 auto;
 }
 
+main {
+    margin: 0 40px;
+}
+
 /* header start here */
 /* nav start */
 nav {
@@ -110,12 +114,67 @@ nav ul button {
     font-weight: 600;
     text-transform: uppercase;
 }
-.banner-content .btn-1{
+
+.banner-content .btn-1 {
     background-color: #FF42A5;
 }
-.banner-content .btn-2{
+
+.banner-content .btn-2 {
     background-color: #4EC5F7;
 }
 
 /* Main section start here */
 /* Online games start */
+.online h2 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+}
+
+.online h2 span {
+    color: #FF42A5;
+}
+
+.online .title-p {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.online .img {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.online .img img {
+    margin-bottom: 1.25rem;
+}
+
+.online .img p {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Play Instantly */
+.play {
+    display: flex;
+    margin-top: 5rem;
+    text-align: right;
+    align-items: center;
+}
+
+.play h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.play p{
+    width: 350px;
+}
