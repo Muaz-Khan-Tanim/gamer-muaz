@@ -191,3 +191,12 @@ nav ul button {
     position: relative;
     right: 200px;
 }
+
+/* Games add */
+
+.game{
+    border-radius: 50px;
+    background: #FFF;
+    width: 300;
+    
+}
