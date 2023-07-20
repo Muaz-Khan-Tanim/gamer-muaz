@@ -276,8 +276,7 @@ footer p {
     }
 
     .banner img,
-    .play,
-    .play-content {
+    .play {
         width: 100%;
     }
 
@@ -298,6 +297,8 @@ footer p {
     }
     .play-content{
         margin-top: 3rem;
+        text-align: center;
+        margin-left: -100px;
     }
     .games-card {
         display: flex;
@@ -307,14 +308,13 @@ footer p {
         margin-left: -150px;
     }
 
-    .btm-list,
+    
     .logo-btm,
-    .icon,
-    .term-list {
-        margin-left: -350px;
+    .icon {
+        justify-content: center;
     }
 
-    footer p {
+    footer p, .btm-list, .term-list {
         margin-left: -250px;
         padding: 0;
     }
