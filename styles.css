@@ -5,11 +5,6 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0 auto;
 }
-
-main {
-    padding: 0 40px;
-}
-
 span {
     color: #FF42A5;
 }
@@ -21,50 +16,52 @@ nav {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     height: 130px;
     display: flex;
-    margin: 0 0.5rem;
 }
-
 nav .logo {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 nav h2 {
     color: #0B0223;
     font-size: 2.8rem;
     font-weight: 700;
 }
-
-
-
 nav .nav-list {
     display: flex;
     gap: 20px;
     align-items: center;
-
 }
-
 nav li {
     list-style: none;
     color: #3C354F;
     font-size: 1.125rem;
     font-weight: 500;
 }
-
 nav a {
     text-decoration: none;
 }
-
-nav ul button {
-    width: 200px;
+nav ul .follow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
     height: 50px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     border: none;
     color: #3C354F;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
+    text-align: center;
+}
+nav #flw {
+    color: #3C354F;
+}
+nav ul > button{
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-align: center;
     align-items: center;
 }
 
@@ -75,12 +72,10 @@ nav ul button {
     background-repeat: no-repeat;
     align-items: center;
 }
-
 .banner .banner-content {
     height: 100%;
     align-items: center;
 }
-
 .banner-content h2 {
     color: #0B0223;
     font-size: 3rem;
@@ -88,7 +83,6 @@ nav ul button {
     text-transform: uppercase;
     margin-bottom: 0px;
 }
-
 .banner-content h1 {
     margin-top: 0;
     font-size: 6rem;
@@ -97,7 +91,6 @@ nav ul button {
     color: #FF42A5;
     margin-bottom: 1.25rem;
 }
-
 .banner-content p {
     color: #534C64;
     font-size: 1.25rem;
@@ -105,7 +98,6 @@ nav ul button {
     list-style: none;
     margin-bottom: 0.8rem;
 }
-
 .banner-content button {
     padding: 20px 40px;
     margin-right: 1rem;
@@ -117,11 +109,9 @@ nav ul button {
     font-weight: 600;
     text-transform: uppercase;
 }
-
 .banner-content .btn-1 {
     background-color: #FF42A5;
 }
-
 .banner-content .btn-2 {
     background-color: #4EC5F7;
 }
@@ -134,30 +124,25 @@ nav ul button {
     font-size: 3rem;
     font-weight: 700;
     margin-top: 5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
-
 .online .title-p {
     color: #534C64;
     text-align: center;
     font-size: 1.125rem;
     font-weight: 400;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
-
 .online .img {
     display: flex;
     width: 25%;
     justify-content: space-around;
     gap: 1.5rem;
 }
-
-
 .online .img img {
     margin-bottom: 1.25rem;
     position: relative;
 }
-
 .watch-btn {
     position: absolute;
     top: -250px;
@@ -165,14 +150,11 @@ nav ul button {
     font-size: 1.25rem;
     font-weight: 600;
 }
-
 .online .img img:hover {
     border: 8px solid #FF42A5;
     border-radius: 25px;
     filter: brightness(50%);
-
 }
-
 .online .img p {
     color: #534C64;
     font-size: 1.25rem;
@@ -187,38 +169,30 @@ nav ul button {
     align-items: center;
     margin-left: 300px;
 }
-
 .play h2 {
     font-size: 3rem;
     font-weight: 700;
-
 }
-
 .play p {
     width: 350px;
-
 }
-
 .play .play-img {
     margin-right: 0;
 }
-
 .play .play-img .img-1 {
     position: relative;
     z-index: 1;
     bottom: -100px;
 }
-
 .play .play-img .img-2 {
     position: relative;
     right: 200px;
 }
 
 /* Games add */
-
 .games-card {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 5rem;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     padding: 5rem 10rem;
@@ -231,8 +205,8 @@ nav ul button {
     width: 300px;
     background-color: #FFF;
     align-items: center;
+    text-align: right;
 }
-
 .game:hover {
     color: #FF42A5;
     border: 1px solid #FF42A5;
@@ -243,7 +217,6 @@ footer {
     background-color: #0B0223;
     padding: 6rem 24rem;
 }
-
 .logo-btm {
     color: #FFF;
     display: flex;
@@ -251,7 +224,6 @@ footer {
     text-align: center;
     align-items: center;
 }
-
 .btm-list {
     display: flex;
     color: #FFF;
@@ -259,11 +231,12 @@ footer {
     margin-top: 3rem;
     gap: 0;
 }
-footer .icon{
+footer .icon {
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 5rem;
 }
-
 .term-list {
     display: flex;
     color: #FFF;
@@ -274,7 +247,6 @@ footer .icon{
     font-size: 1rem;
     font-weight: 500;
 }
-
 footer p {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
@@ -286,59 +258,86 @@ footer p {
 /* Responsive devices */
 /* mobile devices */
 @media screen and (max-width:425px) {
-    nav, .nav-list, .img, .play {
+
+    nav,
+    .nav-list,
+    .img,
+    .play {
         flex-direction: column;
         margin-top: 1rem;
     }
+
     .banner {
         flex-direction: column-reverse;
-        margin-top: 5rem;  
+        margin-top: 5rem;
     }
-    .banner img, .play, .play-content{
+
+    .banner img,
+    .play,
+    .play-content {
         width: 100%;
     }
-    .img-card{
+
+    .img-card {
         margin-left: -120px;
     }
-    .play{
+
+    .play {
         text-align: center;
     }
-    .play-content, .play-img {
+
+    .play-content,
+    .play-img {
         margin-left: -290px;
     }
-    .img-2, .img-1 {
+
+    .img-2,
+    .img-1 {
         width: 50%;
     }
+
     .img-1 {
         margin-left: -100px;
         bottom: -250px;
     }
+
     .games-card {
         display: grid;
         width: 30%;
         grid-template-columns: repeat(1, 1fr);
         margin-left: -150px;
     }
-    .btm-list, .logo-btm, .icon, .term-list {
+
+    .btm-list,
+    .logo-btm,
+    .icon,
+    .term-list {
         margin-left: -350px;
     }
+
     footer p {
         margin-left: -250px;
     }
 }
+
 @media screen and (min-width:425px) and (max-width:768px) {
-    .banner, .play, .play-img {
+
+    .banner,
+    .play,
+    .play-img {
         flex-direction: column-reverse;
     }
-    img{
+
+    img {
         grid-template-columns: repeat(2, 2fr);
     }
+
     .img-1 {
         margin-left: 300px;
     }
+
     .play-content {
         text-align: center;
         margin-left: -150px;
     }
 }
-
