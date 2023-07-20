@@ -321,5 +321,19 @@ footer p {
 }
 /* tablet view */
 @media screen and (min-width:425px) and (max-width:768px) {
-
+    .banner, .play {
+        flex-direction: column-reverse;
+    }
+    .img, .games-card {
+        flex-wrap: wrap;
+    }
+    .play-content{
+        text-align: center;
+    }
+    .img-1 {
+        margin-right: 250px;
+    }
+    footer, .logo-btm {
+        margin-left: -100px;
+    }
 }
