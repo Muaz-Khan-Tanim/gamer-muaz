@@ -45,7 +45,7 @@ nav ul .follow-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     height: 50px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
@@ -143,17 +143,17 @@ nav ul > button{
     margin-bottom: 1.25rem;
     position: relative;
 }
-.watch-btn {
+.watch{
     position: absolute;
-    top: -250px;
-    right: -50px;
-    font-size: 1.25rem;
-    font-weight: 600;
+    visibility: hidden;
 }
 .online .img img:hover {
     border: 8px solid #FF42A5;
     border-radius: 25px;
     filter: brightness(50%);
+}
+.online .img img:hover .watch {
+    visibility: visible;
 }
 .online .img p {
     color: #534C64;
@@ -264,7 +264,10 @@ footer p {
     .img,
     .play {
         flex-direction: column;
-        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    .nav{
+        height: 500px;
     }
 
     .banner {
@@ -281,30 +284,26 @@ footer p {
     .img-card {
         margin-left: -120px;
     }
-
-    .play {
-        text-align: center;
+    .play{
+        margin-left: 150px;
     }
-
-    .play-content,
-    .play-img {
-        margin-left: -290px;
-    }
-
-    .img-2,
-    .img-1 {
+    .play-img .img-2 {
         width: 50%;
+        margin-left: -20px;
     }
-
-    .img-1 {
-        margin-left: -100px;
-        bottom: -250px;
+    .play-img .img-1{
+        margin-left: 20px;
+        width: 40%;
+        margin-bottom: 2rem;
     }
-
+    .play-content{
+        margin-top: 3rem;
+    }
     .games-card {
-        display: grid;
-        width: 30%;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 50%;
         margin-left: -150px;
     }
 
@@ -317,27 +316,10 @@ footer p {
 
     footer p {
         margin-left: -250px;
+        padding: 0;
     }
 }
-
+/* tablet view */
 @media screen and (min-width:425px) and (max-width:768px) {
 
-    .banner,
-    .play,
-    .play-img {
-        flex-direction: column-reverse;
-    }
-
-    img {
-        grid-template-columns: repeat(2, 2fr);
-    }
-
-    .img-1 {
-        margin-left: 300px;
-    }
-
-    .play-content {
-        text-align: center;
-        margin-left: -150px;
-    }
 }
